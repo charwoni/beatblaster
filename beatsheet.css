@@ -20,18 +20,21 @@ body {
     position: fixed;
     left: 0px;
     top: 0px;
-    z-index: 3;
+    z-index: 4;
     filter: blur(0px);
     color: #FFF;
     box-shadow: 0 0 0.3vh 0.4vh #88B;
 }
 
-#header {
+.header {
     font-size: 5.5vh;
     padding: 0px;
     margin: 0.7vh 0px;
     font-weight: 600;
     white-space: nowrap;
+    color: inherit;
+    font-style: inherit;
+    text-decoration: inherit;
 }
 
 #overlay {
