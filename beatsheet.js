@@ -132,7 +132,7 @@ function nextBeat(){
     
     $(nextBeatID).children("textarea").focus();   
     
-    descDown = false;
+    descDown = true;
     
     currentBeat++;
     
