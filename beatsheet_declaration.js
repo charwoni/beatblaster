@@ -4,6 +4,7 @@ var beat1 = {
     Title: "Opening Image",
     Description: "A visual that represents the struggle & tone of the story. A snapshot of the main character’s problem, before the adventure begins.",
     userInput: "",
+    pageNum: "(1)"
 };
 
 beatsheet.push(beat1);
@@ -12,6 +13,7 @@ var beat2 = {
     Title: "Set-up",
     Description: "Expand on the “before” snapshot. Present the main character’s world as it is, and what is missing in their life",
     userInput: "",
+    pageNum: "(1–10)"
 };
 
 beatsheet.push(beat2);
@@ -20,6 +22,7 @@ var beat3 = {
     Title: "Theme Stated",
     Description: "What your story is about; the message, the truth. Usually, it is spoken to the main character or in their presence, but they don’t understand the truth…not until they have some personal experience and context to support it.",
     userInput: "",
+    pageNum: "(5)"
 };
 
 beatsheet.push(beat3);
@@ -28,6 +31,7 @@ var beat4 = {
     Title: "Catalyst",
     Description: "The moment where life as it is changes. It is the telegram, the act of catching your loved-one cheating, allowing a monster onboard the ship, meeting the true love of your life, etc. The “before” world is no more, change is underway",
     userInput: "",
+    pageNum: "(11)"
 };
 
 beatsheet.push(beat4);
@@ -36,6 +40,7 @@ var beat5 = {
     Title: "Debate",
     Description: "But change is scary and for a moment, or a brief number of moments, the main character doubts the journey they must take. Can I face this challenge? Do I have what it takes? Should I go at all? It is the last chance for the hero to chicken out.",
     userInput: "",
+    pageNum: "(11–23)"
 };
 
 beatsheet.push(beat5);
@@ -44,6 +49,7 @@ var beat6 = {
     Title: "Break into Two",
     Description: "The main character makes a choice and the journey begins. We leave the “Thesis” world and enter the upside-down, opposite world of Act Two.",
     userInput: "",
+    pageNum: "(23)"
 };
 
 beatsheet.push(beat6);
@@ -52,6 +58,7 @@ var beat7 = {
     Title: "B Story",
     Description: "This is when there’s a discussion about the Theme – the nugget of truth. Usually, this discussion is between the main character and the love interest. So, the B Story is usually called the “love story”.",
     userInput: "",
+    pageNum: "(27)"
 };
 
 beatsheet.push(beat7);
