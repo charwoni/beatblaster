@@ -81,8 +81,8 @@ function createBeatDivs(){
 
 function startGame(){
     
-  //bring Arrow Bar up
-//    $("#arrowBar").animate({top: "94%"},400)
+//  bring Arrow Bar up
+    $("#arrowBar").animate({opacity: "0.2%"},400);
   
     $("#overlay").animate({opacity: "0.9"}, {duration: 1000, queue: false})
 //    setTimeout(function(){
@@ -97,12 +97,17 @@ function startGame(){
         var currentArrowID = "#descArrow_" + currentBeat;
         expandDescription();
     });
+    
+    $(".beatDescription").click(function(){
+        var currentArrowID = "#descArrow_" + currentBeat;
+        expandDescription();
+    });
 
      $(".beatField").on("input",function(){
         var currentBeatID = "#beatDiv_" + currentBeat;
         if($(currentBeatID).children(".beatField").val().length > 15){
             nextBeatReady = true;
-            $("#arrowBar").css({filter:"saturate(100%)",opacity:"0.6"});
+            $("#arrowBar").css({filter:"saturate(100%)",opacity:"1"});
         }
     });
     
@@ -137,7 +142,7 @@ function nextBeat(){
     
     nextBeatReady = false;
     
-    $("#arrowBar").css({filter:"saturate(0%)",opacity:"0.2"});
+    $("#arrowBar").css({filter:"saturate(0%)",opacity:"0"});
 
 }
 
