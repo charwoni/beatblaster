@@ -1,0 +1,294 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #FAFAFF;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+#topBar {
+    width: 100%;
+    height: 8%;
+    background-color: #99F;
+    padding: 0px 30px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    filter: blur(0px);
+    color: #FFF;
+    box-shadow: 0 0 0.3vh 0.4vh #88B;
+}
+
+#header {
+    font-size: 5.5vh;
+    padding: 0px;
+    margin: 0.7vh 0px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    z-index: 1;
+    opacity: 0;
+}
+
+#centeringDiv {
+    position: relative;
+    top: 0px;
+    width: 86%;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+    opacity: 1;
+}
+
+/*
+#beatDiv_1 {
+    position: fixed;
+    top: 12%;
+    margin: auto;
+}
+    
+#beatDiv_2 {
+    position: fixed;
+    top: 100%;
+    margin: auto;
+}
+*/
+
+.beatDiv {
+    margin: auto;
+    padding: 0;
+    width: 86%;
+    height: 80%;
+    max-width: 1000px;
+}
+
+.beatTitle {
+    font-size: 4.5vh;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+    
+    display: inline;
+    
+    color: #88c;
+    opacity: 0.8;
+    
+    height: 12.5%;
+    
+    margin: 0;
+    padding: 1vh 0 1vh 1vh;
+    
+/*    background-color: #DDF*/
+}
+
+.descArrow {
+    margin: 0 0 0 2vh;
+    display: inline;
+    
+    width: 0; 
+    height: 0; 
+    border-left: 2.5vh solid transparent;
+    border-right: 2.5vh solid transparent;
+    border-top: 2.8vh solid #bbe;
+    
+    position: absolute;
+    top: 1.7vh;
+}
+
+.descArrow:hover {
+    cursor: pointer;
+}
+
+.beatDescription {
+    text-align: justify;
+    font-size: 3.3vh;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 1% 0 0 5vh;
+    padding: 0.5vh 1vh 0 1vh;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    border-width: 0 0 0 2px;
+    border-style: solid; 
+    border-color: #ddf;
+    
+    display: block;
+    
+/*
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: #EEE
+*/
+    
+/*    background-color: #DDF;*/
+}
+
+.beatDescription:hover {
+    cursor: pointer;
+}
+
+.beatDescription > span {
+    width: 50%;
+    max-width: 300px;
+    height: 30px;
+    color: #bbe;
+    white-space: pre-wrap;
+}
+
+hr { 
+    border: 2; 
+    width: 40%;
+    height: 2%;
+    border-width: 0 0 1.5px 0;
+    opacity: 1;
+}
+
+.beatField {
+    margin: 0 auto 0 auto; 
+    color: #555;
+    width: 100%;
+    max-width: 100%;
+    height: 79%;
+    resize: none;
+    padding: 2vh 1vh 1vh;
+    
+    outline: none;
+    border: 0;
+    
+    
+    text-align: left;
+    
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 3.6vh;
+    
+    background-color: transparent;
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+#arrowBar {
+    width: 100%;
+    height: 12%;
+    background-color: #AAE;
+    z-index: 2;
+    position:fixed;
+    top: 94%;
+    left:0%;
+    
+    opacity: 0.2;
+    transition: top .4s, opacity .3s;
+        
+    filter: saturate(0%);
+}
+
+#arrowBar:hover {
+    top: 88%;
+    left:0%;
+    opacity: 1;
+    cursor: pointer
+}
+
+#downArrow {
+    width: 0; 
+    height: 0; 
+    border-left: 4.5vh solid transparent;
+    border-right: 4.5vh solid transparent;
+    border-top: 4vh solid #DDF;
+    position: absolute;
+    left: calc(50% - 4.5vh);
+    top: 8px;
+    margin: auto;
+}
+
+#nextBeat {
+    font-size: 4.5vh;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    color: #FFF;
+    padding: 0;
+    margin: auto;
+    white-space: nowrap;
+}
+
+#start {
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    width: 40%;
+    height: 12%;
+    background-color: #99F;
+    color: #FFF;
+    font-family: Avenir, Helvetica;
+    font-size: 9vh;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#endDiv {
+    position: relative;
+    margin: auto;
+    padding: 12vh 0 0 0;
+    width: 86%;
+    height: 80%;
+    max-width: 1000px;
+    
+    opacity: 0;
+}
+
+.endTitle {
+    font-size: 4vh;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+    
+    display: inline;
+    
+    color: #666;
+    opacity: 0.8;
+    
+    height: 12.5%;
+    
+    margin: 2vh 0 0 0;
+    padding: 3vh 0 0vh 1vh;
+}
+
+.userInput {
+    color: #999;
+    text-align: justify;
+    font-size: 3.7vh;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 1% 0 5vh 3.5vh;
+    padding: 0.5vh 1vh 0 1vh;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    border-width: 0 0 0 0.3vh;
+    border-style: solid; 
+    border-color: #CCC;
+    
+}
