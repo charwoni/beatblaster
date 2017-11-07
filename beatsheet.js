@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).on("keydown", function(event){ 
+$(document).on("keyup", function(event){ 
         if(event.shiftKey && (event.which == 13)){
             nextBeat();
         };
